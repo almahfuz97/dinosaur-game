@@ -11,14 +11,14 @@ jumpBtn.addEventListener("click", function () {
 });
 
 document.addEventListener("keypress", function (event) {
-    var text = event.key;
+    var text = event.code;
 
-    if (text == "space") {
+    if (text == "Space") {
         trexImg.classList.add("t-rex-anim");
-
         setTimeout(function () {
             trexImg.classList.remove("t-rex-anim");
-        }, 500)
+        }, 500);
     }
+
 })
 
